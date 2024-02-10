@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.home-backpage{
+    background:linear-gradient(15deg,#01C2E8,#0194E4,#5273E6,#8156E9);
+    position: absolute;
+    height:50%;
+    width: 100%;
+}
+.back-box{
+    margin: auto;
+    position: relative;
+    width: 80%;
+    height: 25vw;
+    top: 10vw;
+    /* background-color: black; */
+}
+.background-box{
+    background-color: #E8E8E8;
+    width: 100vw;
+    height: 100vh;
+}
+.form-box{
+    background: linear-gradient(15deg,#01C2E8,#0194E4,#5273E6,#8156E9);
+    width: 40%;
+    height: 60vh;
+    position: relative;
+    /* left: 53%; */
+    top: 10vh;
+    border: none;
+}
+.form-box form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.form-box form input{
+    margin-top: 5%;
+}
+.form-box form input:first-child{
+    margin-top: 5%;
+}
+.form-box form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.submit-form input{
+    width: 18vh;
+    height: 4vh;
+    border: none;
+}
+.form-date{
+    color: white;
+    margin-bottom: -6%;
+    margin-top: 2%;
+    
+}
+.form-date p:last-child{
+    margin-right: 20%;
+}
+.text-block{
+    width: 50%;
+    margin-top: 10vh;
+    padding-right: 6vh;
+    text-align: justify;
+
+}
