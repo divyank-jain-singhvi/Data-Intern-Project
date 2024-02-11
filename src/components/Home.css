@@ -64,8 +64,24 @@
 }
 .text-block{
     width: 50%;
+    height: 50vh;
     margin-top: 10vh;
     padding-right: 6vh;
     text-align: justify;
-
+}
+.text-block p{
+    height: 21vh;
+}
+.link-button{
+    text-align: end;
+    
+}
+.link-button button{
+    background-color: #01C2E8;
+    color: white;
+    font-style: normal;
+    border: none;
+    box-shadow: 1px 1px 6px black;
+    width: 18vh;
+    height: 4vh;
 }
