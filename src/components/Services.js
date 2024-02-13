@@ -24,6 +24,9 @@ export default function Component(){
   const [companyPortal, setCompanyPortal] = useState(0)
   const [index, setIndex] = useState(0)
   const [companyIndex, setCompanyIndex] = useState(0)
+  const [opacity1, setOpacity1] = useState(0)
+  const [opacity2, setOpacity2] = useState(0)
+  const [opacity3, setOpacity3] = useState(0)
 
 
   
@@ -34,20 +37,22 @@ export default function Component(){
         setCompanyPortal((companyPortal + 1)%companyPortalLink.length)        
       }, 2500);
       if (companyNames[companyIndex]==='Google'){
-        document.getElementById('image1').style.opacity='1';
-        document.getElementById('image2').style.opacity='0.5';
-        document.getElementById('image3').style.opacity='0.5';
+          setOpacity1(1);
+          setOpacity2(0.5);
+          setOpacity3(0.5);
+          // console.log(opacity1,opacity2,opacity3)
       }
       if (companyNames[companyIndex]==='Microsoft'){
-        document.getElementById('image1').style.opacity='0.5';
-        document.getElementById('image2').style.opacity='1';
-        document.getElementById('image3').style.opacity='0.5';
+          setOpacity1(0.5);
+          setOpacity2(1);
+          setOpacity3(0.5);
       }
       if (companyNames[companyIndex]==='Oracle'){
-        document.getElementById('image1').style.opacity='0.5';
-        document.getElementById('image2').style.opacity='0.5';
-        document.getElementById('image3').style.opacity='1';
-      }
+          setOpacity1(0.5);
+          setOpacity2(0.5);
+          setOpacity3(1);
+    }
+    console.log(companyNames[companyIndex])
     }, [index,companyIndex,companyPortal])
 
 
@@ -61,9 +66,9 @@ export default function Component(){
                 <p id='company-details'>{names[index]}</p>
                 <div className='link-button'><button onClick={()=>window.open(companyPortalLink[companyPortal],'_blank')}>Read More</button></div>
                 <div className='d-flex justify-content-center company-logo'>
-                  <img className='w-3 h-3' id='image1' src={google} alt=""/>
-                  <img className='w-3 h-3' id='image2' src={microsoft} alt=""/>
-                  <img className='w-3 h-3' id='image3' src={oracle} alt=""/>
+                  <img className='w-3 h-3' id='image1' style={{opacity:opacity1}} src={google} alt=""/>
+                  <img className='w-3 h-3' id='image2' style={{opacity:opacity2}} src={microsoft} alt=""/>
+                  <img className='w-3 h-3' id='image3' style={{opacity:opacity3}} src={oracle} alt=""/>
                 </div>
               </div>
               <div className='form-box'>
