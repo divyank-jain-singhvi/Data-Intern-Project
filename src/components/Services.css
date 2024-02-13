@@ -54,7 +54,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.submit-form input{
+.submit-form input:last-child{
     width: 18vh;
 }
 .form-date{
@@ -91,4 +91,11 @@
 }
 .company-logo{
     margin-top: 10vh;
+}
+.submited-not{
+    width: 3vh;
+    height: 3vh;
+}
+.applyed{
+    color: white;
 }

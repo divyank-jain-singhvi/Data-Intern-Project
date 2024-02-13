@@ -20,7 +20,6 @@ const companyPortalLink = [
 ]
 
 export default function Component(){
-
   const [companyPortal, setCompanyPortal] = useState(0)
   const [index, setIndex] = useState(0)
   const [companyIndex, setCompanyIndex] = useState(0)
@@ -40,7 +39,6 @@ export default function Component(){
           setOpacity1(1);
           setOpacity2(0.5);
           setOpacity3(0.5);
-          // console.log(opacity1,opacity2,opacity3)
       }
       if (companyNames[companyIndex]==='Microsoft'){
           setOpacity1(0.5);
@@ -66,9 +64,9 @@ export default function Component(){
                 <p id='company-details'>{names[index]}</p>
                 <div className='link-button'><button onClick={()=>window.open(companyPortalLink[companyPortal],'_blank')}>Read More</button></div>
                 <div className='d-flex justify-content-center company-logo'>
-                  <img className='w-3 h-3' id='image1' style={{opacity:opacity1}} src={google} alt=""/>
-                  <img className='w-3 h-3' id='image2' style={{opacity:opacity2}} src={microsoft} alt=""/>
-                  <img className='w-3 h-3' id='image3' style={{opacity:opacity3}} src={oracle} alt=""/>
+                  <img className='w-3 h-3' style={{opacity:opacity1}} src={google} alt=""/>
+                  <img className='w-3 h-3' style={{opacity:opacity2}} src={microsoft} alt=""/>
+                  <img className='w-3 h-3' style={{opacity:opacity3}} src={oracle} alt=""/>
                 </div>
               </div>
               <div className='form-box'>
@@ -86,7 +84,12 @@ export default function Component(){
                   </div>
                   <input type="text" name="" id="" className='form' placeholder='Skill'/>
                   <input type="text" name="" id="" className='form' placeholder='Job Role'/>
-                  <div className='d-flex justify-content-end submit-form'>
+                  <div className='d-flex justify-content-spacebetween submit-form'>
+                    <div className='d-flex alignment'>
+                    <input type="checkbox" className='submited-not' name="" id=""/>
+                  <p className='p-0 m-0 '>Applyed</p>
+                    </div>
+                  
                     <input type="submit" name="" id="submit-data" />
                   </div>
                 </form>
