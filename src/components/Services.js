@@ -87,7 +87,7 @@ export default function Component(){
                   <div className='d-flex justify-content-spacebetween submit-form'>
                     <div className='d-flex alignment'>
                     <input type="checkbox" className='submited-not' name="" id=""/>
-                  <p className='p-0 m-0 '>Applyed</p>
+                  <p className='p-0 m-0'>Applyed</p>
                     </div>
                   
                     <input type="submit" name="" id="submit-data" />
@@ -99,7 +99,6 @@ export default function Component(){
           </div>
         </div>
         <div className='background-box'></div>
-        
         </>
     )
   }

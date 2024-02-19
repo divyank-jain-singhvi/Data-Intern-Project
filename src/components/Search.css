@@ -1,0 +1,32 @@
+.background-color{
+    background:linear-gradient(15deg,#01C2E8,#0194E4,#5273E6,#8156E9);
+    width: 100vw;
+    height: 100vh;
+}
+.table-box{
+    position: relative;
+    background-color: #E8E8E8;
+    width: 90vw;
+    height: 80vh;
+    top: 15vh;
+    overflow-y: scroll;
+}
+.tableStyle{
+    width: 7vw;
+}
+.cellStyle{
+    border: 2px solid black;
+    padding: 0 4vw 0 4vw;
+    text-align: center;
+}
+.headerStyle{
+    background-color: #f2f2f2;
+    border: 2px solid black;
+    /* text-align:center; */
+    padding: 0 3.33vw 0 3.33vw;
+    width: 7vw;
+}
+.data-table{
+    padding: 4vh;
+    padding-left: 4.5vh;
+}
