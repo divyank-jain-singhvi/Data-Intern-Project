@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+![Desktop - 2](https://github.com/divyank-jain-singhvi/Inotebook/assets/119522879/5bd5469f-4608-4370-851a-f431938c8e19)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
